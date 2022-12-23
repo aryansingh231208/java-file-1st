@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class factorial {
+    public static void printfact(int n) {
+        int calfactorial = 1;
+        for(int i=n;i>0;i--) {
+           calfactorial = calfactorial*i;
+        }
+        System.out.println(calfactorial);
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+       printfact(n);
+        
+    }
+}
